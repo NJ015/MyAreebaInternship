@@ -1,0 +1,16 @@
+loop 
+
+map
+filter
+reduce
+find
+slice
+
+forEach
+for 
+while
+
+
+
+split 
+findIndex
