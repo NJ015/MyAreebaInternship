@@ -1,0 +1,69 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  /* margin-top: 10px; */
+  font-size: 2rem;
+  font-family: SEGA;
+  font-weight: 200;
+  color: #0ccac4;
+  margin-top: 5px;
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.searchBar {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #cdecff;
+  border-radius: 8px;
+}
+
+.robotList {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 580px;
+  justify-content: center;
+  padding: 8px;
+}
+
+.robot {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  max-height: 280px;
+  max-width: 200px;
+  background-color: #9eebcf;
+}
+
+.robot:hover {
+  transform: scale(1.05);
+}
+
+.robotImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.robotInfo {
+  padding: 20px 0;
+  text-align: center;
+}

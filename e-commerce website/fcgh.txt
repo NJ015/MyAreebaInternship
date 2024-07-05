@@ -1,0 +1,1417 @@
+
+
+/* Mobile devices (portrait) */
+@media (max-width: 320px) {
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        width: 100%;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    #collections h2,
+    #projects h2,
+    #products h2 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .subheader {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    .logo {
+        font-size: 2.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu a {
+        margin: 1% 0;
+        font-size: 0.9em;
+    }
+
+    #menu-icons {
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .searchForm {
+        background-color: white;
+        margin-bottom: 2%;
+        border: 2px solid black;
+    }
+
+    .searchForm input[type="text"] {
+        font-size: 0.9em;
+        padding: 2%;
+        width: 80%;
+    }
+
+    #upper-picture {
+        padding: 15% 5%;
+        background-position: right;
+    }
+
+    #textbox {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+        padding: 5%;
+    }
+
+
+
+    .pictures {
+        flex-direction: column;
+        margin: 5% auto 0 auto;
+    }
+
+    .products-caption {
+        font-size: 0.8em;
+    }
+
+
+
+
+
+
+
+
+    #vision {
+        width: 90%;
+        margin: 0 auto 0 auto;
+        background-image: url("img/Mask group (4).png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #vision img {
+        display: none;
+    }
+
+    #textbox2 {
+        width: 95%;
+        margin: 0px auto 0px auto;
+        top: 60px;
+        left: 6px;
+
+    }
+
+    #inner-text2 {
+        padding: 10px;
+    }
+
+    #solutions {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .lowerPic {
+        flex-direction: column;
+    }
+
+    .sol {
+        width: 100%;
+    }
+
+
+
+    #projects,
+    #collections,
+    #products,
+    #vision,
+    #SHOWROOMS {
+        padding: 10px 10px;
+    }
+
+    #projects .pics,
+    #collections .pics {
+        flex-direction: column;
+    }
+
+    #projects .pic,
+    #collections .pic {
+        width: 100%;
+        margin: 3px;
+    }
+
+
+
+
+    #SHOWROOMS img {
+        display: none;
+    }
+
+    #SHOWROOMS {
+        background-image: url("img/unsplash_mpN7xjKQ_Ns.png");
+    }
+
+    #inner-text3 {
+        top: 80px;
+        left: 0px;
+        margin: auto;
+        width: 90%;
+
+    }
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        padding: 5% 10px;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    #footer-icons {
+        justify-content: center;
+    }
+
+    #footer-icons i.fab {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    #createdBy,
+    #copyrights {
+        text-align: center;
+    }
+
+    #logo2 {
+        width: 100%;
+        font-family: monospace;
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
+
+/* Mobile devices (landscape) */
+@media (max-width: 480px) {
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0px;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        margin-bottom: 1%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #collections h2,
+    #projects h2,
+    #products {
+        text-align: center;
+    }
+
+    p {
+        color: #666;
+    }
+
+    #inner-text p,
+    .pictures p {
+        color: #ddd;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .subheader {
+        text-align: center;
+        width: 50%;
+        font-size: small;
+        margin: 0 auto;
+        color: #666;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        opacity: 65%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+
+    hr {
+        width: 8%;
+        border: 1px solid #000;
+        margin: 0 auto 1%;
+    }
+
+    .logo {
+        box-sizing: border-box;
+        font-family: monospace;
+        font-size: xx-large;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    button {
+        border: none;
+        padding: 2% 4%;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    #menu {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        padding: 2% 0;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5%;
+    }
+
+    #menu a {
+        margin: 0 1.5%;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #menu a:hover {
+        color: gray;
+    }
+
+    #menu-icons {
+        display: inline-block;
+        margin-left: 2%;
+    }
+
+    .searchForm {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        outline: none;
+    }
+
+    .searchForm input[type="text"] {
+        border: none;
+        font-size: medium;
+        padding: 0.5%;
+    }
+
+    #menu-icons {
+        display: flex;
+    }
+
+    #menu-icons i.material-icons {
+
+        font-size: 24px;
+        margin: 0 1%;
+        cursor: pointer;
+    }
+
+    #menu-icons i.material-icons:hover {
+        color: #ccc;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #upper-picture {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: white;
+        padding: 8% 2%;
+    }
+
+    #textbox {
+        float: right;
+        margin-right: 15%;
+        width: 34%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2%;
+        color: white;
+        text-align: center;
+    }
+
+    #inner-text button {
+        margin-top: 2%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .pictures {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1%;
+    }
+
+    .one {
+        background-color: white;
+        color: black;
+        padding: 1% 2%;
+    }
+
+    .two {
+        background-color: black;
+        color: white;
+        padding: 1% 2%;
+        margin-top: 18%;
+    }
+
+    #pic1 img,
+    #pic2 img,
+    #pics3 img {
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pic3 {
+        position: relative;
+        top: 6.5px;
+    }
+
+    #pic4 {
+        position: relative;
+        top: -6.5px;
+    }
+
+    .products-caption {
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-size: 0.9em;
+        margin-right: 5%;
+        margin-left: 5%;
+        position: relative;
+        top: -55px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #vision {
+        width: 86%;
+        height: 570px;
+        margin-top: 1%;
+    }
+
+    #vision img {
+        float: right;
+        height: 100%;
+        width: 100%;
+        margin-right: 1.5%;
+        object-fit: contain;
+        position: relative;
+    }
+
+    #vision h2 {
+        text-align: left;
+    }
+
+    #vision .two {
+        margin-top: 0%;
+    }
+
+    .center {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #textbox2 {
+        float: left;
+        width: 45%;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -435px;
+        left: -10%;
+    }
+
+    #inner-text2 {
+        float: left;
+        background-color: rgb(248 249 216);
+        padding: 45px;
+        text-align: left;
+        color: black;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #solutions {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    #solutions h2 {
+        text-align: left;
+    }
+
+    .lowerPic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2%;
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    .sol {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .sol img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #projects,
+    #collections,
+    #products,
+    #vision,
+    #SHOWROOMS {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    #projects .pics {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+
+    #projects .pic {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+    }
+
+    #projects .pic img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #projects button,
+    #collections button {
+        margin-top: 1%;
+    }
+
+    #collections .pics {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    #collections .pic {
+        margin-bottom: 2%;
+        box-shadow: 1px 3px 10px #b8b7b7a3;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    #SHOWROOMS {
+        width: 86%;
+        height: 570px;
+        margin: 1%;
+        margin-bottom: 10%;
+    }
+
+    #inner-text3 {
+        float: right;
+        width: 40%;
+        padding: 4%;
+        position: relative;
+        top: -85%;
+        left: -15%;
+        background-color: #ffffde;
+    }
+
+
+    #SHOWROOMS img {
+        float: left;
+        margin-right: 1.5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        background-color: #000000;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: small;
+        position: relative;
+    }
+
+    footer div {
+        width: 23%;
+        margin: 10px 0;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    #footer-icons {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #createdBy,
+    #copyrights {
+        margin-top: 10px;
+        font-size: x-small;
+        position: relative;
+        width: 100%;
+    }
+
+    #createdBy {
+        bottom: -5%;
+        float: right;
+    }
+
+    #col1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo2 {
+        box-sizing: border-box;
+        margin-top: 10%;
+        width: 100%;
+        font-family: monospace;
+        font-size: xx-large;
+        height: 60%;
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+
+
+
+    h2 {
+        font-size: 4em;
+    }
+
+
+
+
+    img {
+        object-fit: cover;
+        width: max-content;
+    }
+
+    .subheader {
+        width: 70%;
+        font-size: xx-large;
+        color: #666;
+    }
+
+
+    hr {
+        width: 15%;
+    }
+
+    .logo {
+        font-size: 5em;
+    }
+
+    button {
+        font-size: 35px;
+    }
+
+
+
+
+
+    #menu {
+        font-size: xxx-large;
+        margin: 3%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .searchForm {
+        border: 7px solid black;
+        border-radius: 20px;
+    }
+
+    .searchForm input[type="text"] {
+        font-size: xxx-large;
+        padding: 1%;
+    }
+
+    #menu-icons {
+        gap: 15%;
+    }
+
+    #menu-icons i.material-icons {
+        font-size: 65px;
+    }
+
+
+
+
+
+
+
+    #textbox {
+        margin-right: 1%;
+        width: 80%;
+    }
+
+    #textbox p {
+        font-size: 3em;
+    }
+
+    #inner-text button {
+        margin-top: 2%;
+        font-size: 3em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .pictures {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+
+    #pic1,
+    #pic2 {
+        width: 100%;
+    }
+
+    #pics3 {
+        flex-direction: column;
+        gap: 1%;
+        width: 100%;
+    }
+
+    #pic3 {
+        top: 0px;
+        width: 100%;
+    }
+
+    #pic4 {
+        top: 0px;
+        width: 100%;
+    }
+
+    .products-caption {
+        font-size: 2.5em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+
+
+
+
+
+
+    #vision {
+        width: 100%;
+        background-image: url("img/Mask Group (4).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #vision img {
+        display: none;
+    }
+
+    #textbox2 {
+        float: none;
+        width: 90%;
+        top: -4%;
+        left: 0%;
+        margin: auto;
+    }
+
+    #inner-text2 {
+        font-size: 2em;
+        padding-left: 0px 0px 0px 30px;
+    }
+
+    #inner-text2 h2 {
+        margin: 0px;
+        font-size: 2em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .right {
+        display: none;
+    }
+
+
+
+
+    .lowerPic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .sol {
+        width: 90%;
+        margin: auto;
+    }
+
+    .left .two {
+        margin: 60px 0px 0px 55px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #projects,
+    #collections,
+    #products,
+    #vision,
+    #SHOWROOMS {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    #projects .pics {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #projects .pic {
+        width: 100%;
+    }
+
+    #projects p,
+    #collections p {
+        font-size: 3em;
+    }
+
+    #collections .pics {
+        gap: 20px;
+        width: 100%;
+    }
+
+    #collections .pic {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .pic-text {
+        height: 30%;
+        width: 100%;
+    }
+
+
+
+    #SHOWROOMS {
+        width: 100%;
+        background-image: url("img/unsplash_mpN7xjKQ_Ns.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #inner-text3 {
+        float: none;
+        width: 90%;
+        top: -55px;
+        left: 0%;
+        margin: 15px auto 15px auto;
+    }
+
+    #inner-text3 p {
+        font-size: 2.5em;
+    }
+
+    #inner-text3 h2 {
+        margin-top: 3px;
+    }
+
+    #SHOWROOMS img {
+        display: none;
+    }
+
+    #SHOWROOMS .two {
+        margin: 0px 0px 0px 0px;
+    }
+
+
+
+
+
+
+
+
+
+    footer {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    #footer-icons {
+        gap: 25px;
+    }
+
+    #createdBy,
+    #copyrights {
+        font-size: large;
+        text-align: center;
+        width: 100%;
+    }
+
+    #createdBy {
+        bottom: 0;
+    }
+
+    #col1 {
+        justify-content: space-around;
+    }
+
+    #logo2 {
+        font-size: xxx-large;
+        height: 20%;
+
+    }
+}
+
+
+/* Tablets (landscape) */
+/* @media (min-width: 1024px) {
+    
+
+
+    h2 {
+        font-size: 4em;
+    }
+    
+    
+    
+    
+    img {
+        object-fit: cover;
+        width:max-content;
+    }
+    
+    .subheader {
+        width: 70%;
+        font-size: xx-large;
+        color: #666;
+    }
+    
+    
+    hr {
+        width: 15%;
+    }
+    
+    .logo {
+        font-size: 5em;
+    }
+    
+    button {
+        font-size: 35px;
+    }
+    
+    
+    
+    
+    
+    #menu {
+        font-size: xxx-large;
+        margin: 3%;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    
+    .searchForm{
+        border: 7px solid black;
+        border-radius:20px;
+    }
+        
+    .searchForm input[type="text"] {
+        font-size: xxx-large;
+        padding: 1%;
+    }
+    
+    #menu-icons{
+        gap: 15%;
+    }
+        
+    #menu-icons i.material-icons {
+        font-size: 65px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #textbox {
+        margin-right: 1%;
+        width: 80%;
+    }
+    #textbox p{
+        font-size:3em;
+    }
+    #inner-text button {
+        margin-top: 2%;
+        font-size: 3em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .pictures {
+        flex-direction:column;
+        flex-wrap:wrap;
+        gap: 1%;
+    }
+    
+    #pic1, #pic2{
+        width:100%;
+    }
+    #pics3 {
+        flex-direction: column;
+        gap: 1%;
+        width: 100%;
+    }
+    
+    #pic3 {
+        top: 0px;
+        width:100%;
+    }
+    
+    #pic4 {
+        top: 0px;
+        width:100%;
+    }
+    
+    .products-caption {
+        font-size: 2.5em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+    
+    
+    
+    
+    
+    
+    #vision {
+        width: 100%;
+        background-image: url("img/Mask Group (4).png");
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    
+    #vision img {
+        display:none;
+    }
+    
+    #textbox2 {
+        float: none;
+        width: 90%;
+        top: -4%;
+        left: 0%;
+        margin:auto;
+    }
+    
+    #inner-text2 {
+        font-size: 2em;
+        padding-left: 0px 0px 0px 30px;
+    }
+    #inner-text2 h2{
+        margin: 0px;
+        font-size: 2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .left {
+        width: 100%;
+        align-items:center;
+    }
+    
+    .right {
+        display:none;
+    }
+    
+    
+    
+    
+    .lowerPic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .text {
+        width: 100%;
+    }
+    
+    .sol {
+        width: 90%;
+        margin:auto;
+    }
+    
+    .left .two{
+        margin: 60px 0px 0px 55px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #projects,
+    #collections,
+    #products,
+    #vision,
+    #SHOWROOMS {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    #projects .pics {
+        flex-wrap:wrap;
+        gap: 20px;
+    }
+    
+    #projects .pic{
+        width:100%;
+    }
+    
+    #projects p, #collections p{
+        font-size:3em;
+    }
+    
+    #collections .pics {
+        gap: 20px;
+        width:100%;
+    }
+    
+    #collections .pic {
+        object-fit:cover;
+        width:100%;
+    }
+    
+    .pic-text{
+        height:30%;
+        width:100%;
+    }
+    
+    
+    
+    #SHOWROOMS {
+        width: 100%;
+        background-image: url("img/unsplash_mpN7xjKQ_Ns.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    
+    #inner-text3 {
+        float: none;
+        width: 90%;
+        top: -55px;
+        left: 0%;
+        margin: 15px auto 15px auto;
+    }
+    #inner-text3 p{
+        font-size:2.5em;
+    }
+    #inner-text3 h2{
+        margin-top: 3px;
+    }
+    
+    #SHOWROOMS img {
+        display: none;
+    }
+    
+    #SHOWROOMS .two{
+        margin: 0px 0px 0px 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    footer {
+        font-size: x-large;
+        text-align:center;
+    }
+    
+    #footer-icons{
+        gap: 25px;
+    }
+    
+    #createdBy,
+    #copyrights {
+        font-size: large;
+        text-align:center;
+        width:100%;
+    }
+    
+    #createdBy {
+        bottom: 0;
+    }
+    
+    #col1 {
+        justify-content: space-around;
+    }
+    
+    #logo2 {
+        font-size: xxx-large;
+        height: 20%;
+        
+    }
+    } */
+
