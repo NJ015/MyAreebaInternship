@@ -1,35 +1,61 @@
 import { useState } from "react";
-import './App.css';
-
-const users = [
-  { id: 1, pic: "https://robohash.org/2size=200x200%60", name: "Robot 1", email: "robot1@example.com" },
-  { id: 2, pic: "https://robohash.org/ijkjh", name: "Robot 2", email: "robot2@example.com" },
-  { id: 3, pic: "https://robohash.org/ijk", name: "Robot 3", email: "robot3@example.com" },
-  { id: 4, pic: "https://robohash.org/r", name: "Robot 4", email: "robot4@example.com" },
-  { id: 5, pic: "https://robohash.org/ro", name: "Robot 5", email: "robot5@example.com" },
-  { id: 6, pic: "https://robohash.org/rob", name: "Robot 6", email: "robot6@example.com" },
-  { id: 7, pic: "https://robohash.org/robo", name: "Robot 7", email: "robot7@example.com" },
-  { id: 8, pic: "https://robohash.org/robot", name: "Robot 8", email: "robot8@example.com" },
-  { id: 9, pic: "https://robohash.org/robot68", name: "Robot 9", email: "robot9@example.com" },
-  { id: 10, pic: "https://robohash.org/robot89", name: "Robot 10", email: "robot10@example.com" },
-  { id: 11, pic: "https://robohash.org/robot8", name: "Robot 11", email: "robot11@example.com" },
-  { id: 12, pic: "https://robohash.org/robot1", name: "Robot 12", email: "robot12@example.com" },
-  { id: 13, pic: "https://robohash.org/robot6", name: "Robot 13", email: "robot13@example.com" },
-  { id: 14, pic: "https://robohash.org/robot45", name: "Robot 14", email: "robot14@example.com" },
-];
-
+import "./App.css";
 
 export default function App() {
+  const [users, setUsers] = useState([
+    {
+      id: 1,
+      pic: "https://robohash.org/user1",
+      name: "User 1",
+      username: "user1",
+      email: "user1@example.com",
+      address: {
+        street: "123 Street",
+        city: "City A",
+      },
+      phone: "123-456-7890",
+    },
+    {
+      id: 2,
+      pic: "https://robohash.org/user2",
+      name: "User 2",
+      username: "user2",
+      email: "user2@example.com",
+      address: {
+        street: "456 Avenue",
+        city: "City B",
+      },
+      phone: "234-567-8901",
+    },
+    {
+      id: 3,
+      pic: "https://robohash.org/user3",
+      name: "User 3",
+      username: "user3",
+      email: "user3@example.com",
+      address: {
+        street: "789 Road",
+        city: "City C",
+      },
+      phone: "345-678-9012",
+    },
+  ]);
+
+  const addUser = (newUser) => {
+    setUsers([...users, newUser]);
+  };
+
   return (
     <div className="app">
       <h1 className="title">RoboFriends</h1>
-      <Container users={users} />
+      <Container users={users} addUser={addUser} />
     </div>
   );
 }
 
-function Container({ users }) {
+function Container({ users, addUser }) {
   const [filterText, setFilterText] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(filterText.toLowerCase())
@@ -38,6 +64,16 @@ function Container({ users }) {
   return (
     <div className="container">
       <SearchBar filterText={filterText} onFilterTextChange={setFilterText} />
+      <button onClick={() => setIsModalOpen(true)} className="addUserButton">
+        Add User
+      </button>
+      {isModalOpen && (
+        <AddUserFormModal
+          addUser={addUser}
+          onClose={() => setIsModalOpen(false)}
+          users={users}
+        />
+      )}
       <div className="robotList">
         {filteredUsers.map((user) => (
           <Robot key={user.id} user={user} />
@@ -61,6 +97,89 @@ function SearchBar({ filterText, onFilterTextChange }) {
   );
 }
 
+function AddUserFormModal({ addUser, onClose, users }) {
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [street, setStreet] = useState("");
+  const [city, setCity] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newUser = {
+      id: users.length + 1,
+      name,
+      username,
+      email,
+      address: {
+        street,
+        city,
+      },
+      phone,
+      pic: `https://robohash.org/${username}`,
+    };
+    addUser(newUser);
+    onClose();
+  };
+
+  return (
+    <div className="modal">
+      <div className="modalContent">
+        <span className="closeButton" onClick={onClose}>
+          &times;
+        </span>
+        <h2>Add New User</h2>
+        <form onSubmit={handleSubmit} className="addUserForm">
+          <input
+            type="text"
+            value={name}
+            placeholder="Name"
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            value={username}
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <input
+            type="email"
+            value={email}
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            value={street}
+            placeholder="Street"
+            onChange={(e) => setStreet(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            value={city}
+            placeholder="City"
+            onChange={(e) => setCity(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            value={phone}
+            placeholder="Phone"
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+          <button type="submit">Add User</button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
 function Robot({ user }) {
   return (
     <div className="robot">
@@ -68,7 +187,10 @@ function Robot({ user }) {
       <div className="robotInfo">
         <div>{user.name}</div>
         <div>{user.email}</div>
+        {/* Add link to details page */}
+        <Link to={`/robot/${user.username}`}>View Details</Link>
       </div>
     </div>
   );
 }
+

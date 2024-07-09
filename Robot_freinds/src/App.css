@@ -4,7 +4,6 @@
 }
 
 .title {
-  /* margin-top: 10px; */
   font-size: 2rem;
   font-family: SEGA;
   font-weight: 200;
@@ -26,6 +25,21 @@
   font-size: 1em;
   background-color: #cdecff;
   border-radius: 8px;
+}
+
+.addUserButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #0ccac4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.addUserButton:hover {
+  background-color: #09a3a0;
 }
 
 .robotList {
@@ -66,4 +80,73 @@
 .robotInfo {
   padding: 20px 0;
   text-align: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addUserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addUserForm input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+}
+
+.addUserForm button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #0ccac4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.addUserForm button:hover {
+  background-color: #09a3a0;
 }
