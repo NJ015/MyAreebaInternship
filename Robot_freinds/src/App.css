@@ -8,7 +8,7 @@
   font-family: SEGA;
   font-weight: 200;
   color: #0ccac4;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .container {
@@ -68,7 +68,8 @@
 }
 
 .robot:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  transform: scale(0.8)
 }
 
 .robotImage {
@@ -82,7 +83,16 @@
   text-align: center;
 }
 
-.modal {
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.Form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +107,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modalContent {
+.FormContent {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
