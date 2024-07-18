@@ -3,6 +3,7 @@ import "./App.css";
 import Container from "./Container";
 import RobotDetails from "./RobotDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
 
 export default function App() {
   const [users, setUsers] = useState([
@@ -44,18 +45,19 @@ export default function App() {
     },
   ]);
 
-  const addUser = (newUser) => {
-    setUsers([...users, newUser]);
-  };
+  // const addUser = (newUser) => {
+  //   setUsers([...users, newUser]);
+  // };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: 
-      <div className="app">
-        <h1 className="title">RoboFriends</h1>
-        <Container users={users} addUser={addUser} />
-      </div>,
+      element: (
+        <div className="app">
+          <h1 className="title">RoboFriends</h1>
+          <Container users={users} addUser={addUser} />
+        </div>
+      ),
       // loader: rootLoader,
       // action: rootAction,
     },
@@ -68,7 +70,8 @@ export default function App() {
   ]);
 
   return (
-
+    <Provider store={store}>
       <RouterProvider router={router} />
+    </Provider>
   );
 }
