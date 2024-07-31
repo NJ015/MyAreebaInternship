@@ -6,7 +6,7 @@ export function Counter() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
-  console.log(a)
+  // console.log(a)
 
   return (
     <div>
